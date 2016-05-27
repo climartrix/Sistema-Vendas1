@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block conteudo %}
+<div class="ui grid container">
+  <div class="row">
+    <div class="column">
+      <h1 class="ui header">Controle de Lançamentos</h1>
+      {% if usuario != ''%}
+        <a href="{% url 'sair' %}"> Sair </a> Usuário : {{usuario}}
+      {% else %}
+        <a href="{% url 'entrar' %}"> {{usuario}}</a>
+      {% endif %}
+    </div>
+  </div>
+  <div class="row">
+    <div class="column">
+      <div class="ui message">
+        <h1 class="ui header">Seja bem-vindo</h1>
+        <p>Este sistema é para exemplificar o desenvolvimento de <strong>DJANGO </strong> e <strong>PYTHON</strong> utilizando templates na turma <strong>IFRN</strong>.</p>
+        <a class="ui blue button" href="{% url 'leiame' %}">Leia-Mais &raquo;</a>
+      </div>
+    </div>
+  </div>
+  </div>
+{% endblock %}

@@ -1,0 +1,85 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<!-- Material Design Lite -->
+    <script src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+    <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.indigo-pink.min.css">
+    <!-- Material Design icon font -->
+     <!-- Material Design Lite -->
+    <script src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+    <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.indigo-pink.min.css">
+    <!-- Material Design icon font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<title> Cadastro de Usuário </title>
+<style>
+body {
+  padding: 20px;
+  background: #fafafa;
+  position: relative;
+}
+body {
+  padding: 20px;
+  background: #fafafa;
+  position: relative;
+  width:1250px;
+  height:100%;
+}
+h1 {
+            font-family: Arial;
+            font-size: 40pt;
+            color : white;
+            text-shadow: 2px 2px 2px black;
+            width:100%;
+            height:100%;
+}
+h2 {
+            font-family: Arial;
+            font-size: 20pt;
+            color : white;
+            text-shadow: 2px 2px 2px black;
+            width:100%;
+            height:100%;
+}
+#oi{
+  background: blue;
+  border: 1px solid black;
+}
+.demo-card-wide.mdl-card {
+  width: 400px;
+  height: 570px;
+}
+</style>
+</head>
+<body>
+<div><h1><center>SISTEMA-LOJA</center></h1></div>
+<center>
+<div class="demo-card-wide mdl-card mdl-shadow--2dp">
+<img src="{% static '1.jpeg' %}"
+<form method="POST" action="">
+{% csrf_token %}
+<!-- Simple Textfield -->
+<div><h2><center>Usuário</center></h2></div>
+    <form action="#">
+      <div class="mdl-textfield mdl-js-textfield">
+        <input class="mdl-textfield__input" type="text" id="login" name="usuario">
+        <label class="mdl-textfield__label" for="sample1">Usuário</label>
+      </div>
+    </form>
+    <!-- Numeric Textfield -->
+<div><h2><center>Senha</center></h2></div>
+    <form action="#">
+      <div class="mdl-textfield mdl-js-textfield">
+        <input class="mdl-textfield__input" type="text" id="login" name="senha">
+        <label class="mdl-textfield__label" for="sample1">Senha</label>
+        <span class="mdl-textfield__error">Digite a sua senha</span>
+      </div>
+    </form>
+{{s}}
+<button id="oi" class="mdl-button mdl-js-button mdl-button--raised">Entrar</button>
+</form>
+</div>
+</center>
+</body>
+</html>
